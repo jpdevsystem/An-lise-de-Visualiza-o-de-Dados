@@ -1,0 +1,12 @@
+
+**`.gitignore`**
+```gitignore
+# Ignorar arquivos de dados grandes ou sensíveis
+*.csv
+*.xlsx
+
+# Ignorar arquivos do Jupyter Notebook
+.ipynb_checkpoints/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
