@@ -1,0 +1,2 @@
+Conclusão: O modelo de Random Forest apresentou bons resultados com uma acurácia de X% e um F1-Score de Y%. No entanto, o modelo pode ser melhorado ajustando hiperparâmetros ou testando outros algoritmos.
+Recomendações: Para melhorar o desempenho do modelo, pode-se realizar tuning de hiperparâmetros usando GridSearchCV, ou considerar técnicas de oversampling como SMOTE se houver desbalanceamento nas classes.
