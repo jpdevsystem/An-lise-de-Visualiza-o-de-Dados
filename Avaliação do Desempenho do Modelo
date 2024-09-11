@@ -1,0 +1,15 @@
+As métricas que vamos considerar são:
+
+Acurácia: Proporção de previsões corretas.
+Precisão: Proporção de verdadeiros positivos sobre o total de positivos previstos.
+Recall (Sensibilidade): Proporção de verdadeiros positivos sobre o total de positivos reais.
+F1-Score: Harmônica entre precisão e recall.
+# Avaliação do modelo
+print("Acurácia:", accuracy_score(y_test, y_pred))
+print("Relatório de Classificação:\n", classification_report(y_test, y_pred))
+
+# Gráfico de importância das features
+plt.figure(figsize=(10, 6))
+sns.barplot(x=model.feature_importances_, y=X.columns)
+plt.title('Importância das Features')
+plt.show()
