@@ -1,0 +1,17 @@
+# Predição de Infecção pelo Vírus da AIDS
+
+## Descrição do Problema
+O objetivo é prever a infecção pelo vírus da AIDS com base em características e histórico médico dos pacientes. Utilizando modelos de machine learning, visamos melhorar o diagnóstico e suporte clínico.
+
+## Estrutura do Projeto
+- `AIDS_Classification.csv`: Conjunto de dados com estatísticas de saúde de pacientes.
+- `notebook.ipynb`: Notebook com todo o código de análise e modelagem.
+- `requirements.txt`: Dependências necessárias para executar o projeto.
+- `README.md`: Descrição do projeto.
+- `gitignore`: Arquivos que não devem ser enviados ao repositório (por exemplo, dados grandes ou sensíveis).
+
+## Como Executar
+1. Clone o repositório.
+2. Instale as dependências:
+```bash
+pip install -r requirements.txt
