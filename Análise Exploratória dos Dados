@@ -1,0 +1,27 @@
+Antes de começar o processo de modelagem, é essencial entender o conjunto de dados por meio de uma análise exploratória de dados (EDA). Isso inclui visualizações de distribuição de classes, correlações entre atributos, e análise de outliers.
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Carregar o conjunto de dados
+df = pd.read_csv('AIDS_Classification.csv')
+
+# Primeiras linhas do DataFrame
+print(df.head())
+
+# Informações do DataFrame
+print(df.info())
+
+# Estatísticas descritivas
+print(df.describe())
+
+# Distribuição da variável alvo
+sns.countplot(data=df, x='target')
+plt.title('Distribuição de Pacientes Infectados/Não Infectados')
+plt.show()
+
+# Correlação entre variáveis
+plt.figure(figsize=(10, 8))
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.title('Mapa de Correlação')
+plt.show()
